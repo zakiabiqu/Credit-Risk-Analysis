@@ -1,6 +1,8 @@
 # Credit Risk Analysis Using C5.0 Decision Tree
 
 **Author:** Zaki Abiyu Aqilah  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zakiabiyu/) 
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zakiabiqu)  
 **Tools:** R (openxlsx, C50, reshape2)  
 **Goal:** Predict credit risk rating (1–5) based on customer profile
 
