@@ -1,8 +1,6 @@
 # Credit Risk Analysis Using C5.0 Decision Tree
 
-**Author:** Zaki Abiyu Aqilah  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zakiabiyu/) 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zakiabiqu)  
+**Author:** Zaki Abiyu Aqilah   
 **Tools:** R (openxlsx, C50, reshape2)  
 **Goal:** Predict credit risk rating (1–5) based on customer profile
 
@@ -88,7 +86,7 @@ The dataset contains **1,000+ loan applications** with the following variables:
     - Income ≤ 201 million → (further splits, see full output)
 
 
-📁 **Download detailed outputs:** [Confusion Matrix CSV](output/confusion_matrix.csv) | [Variable Importance CSV](output/variable_importance.csv) | [Full Model Summary](output/model_summary.txt)
+> **Download detailed outputs:** [Confusion Matrix CSV](output/confusion_matrix.csv) | [Variable Importance CSV](output/variable_importance.csv) | [Full Model Summary](output/model_summary.txt)
 
 ---
 
@@ -109,3 +107,11 @@ Three sample applications were tested:
 1. Clone this repository  
 2. Place your Excel file (CreditRisk_R.xlsx) in the data/ folder  
 3. Run script/model.R in RStudio or R console
+
+---
+
+## Connect with Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zakiabiyu)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zakiabiqu)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zakiabiqu@gmail.com)
