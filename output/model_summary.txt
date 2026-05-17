@@ -1,0 +1,127 @@
+========================================
+CREDIT RISK MODEL SUMMARY
+========================================
+Model: C5.0 Decision Tree
+Date: 2026-05-17
+
+========================================
+CALL
+========================================
+C5.0.default(x = training_input, y = training_class, 
+             control = C5.0Control(label = "Risk Rating"))
+
+========================================
+DECISION TREE RULES
+========================================
+
+kpr_aktif = YA:
+:...jumlah_tanggungan <= 4: 3 (255/4)
+:   jumlah_tanggungan > 4:
+:   :...pendapatan_setahun_juta > 248: 4 (52)
+:       pendapatan_setahun_juta <= 248:
+:       :...durasi_pinjaman_bulan <= 24: 4 (71/17)
+:           durasi_pinjaman_bulan > 24: 5 (72/4)
+
+kpr_aktif = TIDAK:
+:...pendapatan_setahun_juta <= 95: 2 (36/7)
+    pendapatan_setahun_juta > 95:
+    :...durasi_pinjaman_bulan > 36: 2 (37/4)
+        durasi_pinjaman_bulan <= 36:
+        :...pendapatan_setahun_juta > 201: 1 (50)
+            pendapatan_setahun_juta <= 201:
+            :...durasi_pinjaman_bulan > 24: 2 (73/33)
+                durasi_pinjaman_bulan <= 24:
+                :...jumlah_tanggungan > 2:
+                    :...durasi_pinjaman_bulan <= 12:
+                    :   :...pendapatan_setahun_juta <= 177: 1 (2)
+                    :   :   pendapatan_setahun_juta > 177: 2 (2)
+                    :   durasi_pinjaman_bulan > 12:
+                    :   :...jumlah_tanggungan <= 5: 2 (9/2)
+                    :       jumlah_tanggungan > 5: 1 (2)
+                    jumlah_tanggungan <= 2:
+                    :...pendapatan_setahun_juta > 148: 1 (78/8)
+                        pendapatan_setahun_juta <= 148:
+                        :...jumlah_tanggungan <= 0: 1 (23/4)
+                            jumlah_tanggungan > 0:
+                            :...pendapatan_setahun_juta <= 110: 2 (10)
+                                pendapatan_setahun_juta > 110:
+                                :...durasi_pinjaman_bulan <= 12: 1 (14/2)
+                                    durasi_pinjaman_bulan > 12: 2 (14/4)
+
+========================================
+TRAINING EVALUATION
+========================================
+Tree Size: 17
+Errors: 89 (11.1%)
+
+Classification by Class:
+           (a)   (b)   (c)   (d)   (e)    <-classified as
+          ----  ----  ----  ----  ----
+           155    46     2                (a): class 1
+            14   131                 1    (b): class 2
+                   2   251                (c): class 3
+                         2   106     3    (d): class 4
+                   2          17    68    (e): class 5
+
+========================================
+ATTRIBUTE USAGE
+========================================
+kpr_aktif                 100.00%
+jumlah_tanggungan          75.50%
+pendapatan_setahun_juta    68.13%
+durasi_pinjaman_bulan      57.13%
+
+========================================
+TESTING EVALUATION
+========================================
+Correct predictions: 96
+Wrong predictions: 4
+Model accuracy: 96%
+
+========================================
+CONFUSION MATRIX (Testing Set)
+========================================
+  Predicted \ Actual    1    2    3    4    5
+                  1    20    0    0    0    0
+                  2     4   13    0    0    0
+                  3     0    0   38    0    0
+                  4     0    0    0    9    0
+                  5     0    0    0    0   16
+
+========================================
+VARIABLE IMPORTANCE
+========================================
+Overall:
+kpr_aktif                100.00
+jumlah_tanggungan         75.50
+pendapatan_setahun_juta   68.13
+durasi_pinjaman_bulan     57.13
+
+========================================
+NEW APPLICATION PREDICTIONS
+========================================
+
+Application 1:
+  Income: 200 million
+  Active KPR: YES
+  Tenure: 12 months
+  Dependents: 6
+  Predicted Risk Rating: 4
+
+Application 2:
+  Income: 150 million
+  Active KPR: NO
+  Tenure: 64 months
+  Dependents: 6
+  Predicted Risk Rating: 2
+
+Application 3:
+  Income: 300 million
+  Active KPR: NO
+  Tenure: 24 months
+  Dependents: 2
+  Predicted Risk Rating: 1
+
+========================================
+END OF REPORT
+========================================
