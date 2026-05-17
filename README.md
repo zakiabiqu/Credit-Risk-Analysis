@@ -85,6 +85,9 @@ The dataset contains **1,000+ loan applications** with the following variables:
     - Income > 201 million → Risk Rating **1**
     - Income ≤ 201 million → (further splits, see full output)
 
+
+📁 **Download detailed outputs:** [Confusion Matrix CSV](output/confusion_matrix.csv) | [Variable Importance CSV](output/variable_importance.csv) | [Full Model Summary](output/model_summary.txt)
+
 ---
 
 ## Predictions on New Applications
@@ -104,4 +107,3 @@ Three sample applications were tested:
 1. Clone this repository  
 2. Place your Excel file (CreditRisk_R.xlsx) in the data/ folder  
 3. Run script/model.R in RStudio or R console
-
