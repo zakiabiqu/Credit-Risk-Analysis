@@ -101,9 +101,7 @@ Three sample applications were tested:
 
 ## How to Run the Code
 
-### Prerequisites
+1. Clone this repository  
+2. Place your Excel file (CreditRisk_R.xlsx) in the data/ folder  
+3. Run script/model.R in RStudio or R console
 
-Install required R packages:
-
-```r
-install.packages(c("openxlsx", "C50", "reshape2"))
