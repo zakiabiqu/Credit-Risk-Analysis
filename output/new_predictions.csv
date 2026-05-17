@@ -1,0 +1,4 @@
+application_id,income_million,active_kpr,tenure_months,dependents,predicted_risk
+App1,200,YA,12,6,4
+App2,150,TIDAK,64,6,2
+App3,300,TIDAK,24,2,1
