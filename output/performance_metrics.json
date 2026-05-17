@@ -1,0 +1,43 @@
+{
+  "model_type": "C5.0 Decision Tree",
+  "training_size": 800,
+  "testing_size": 100,
+  "tree_size": 17,
+  "training_errors": 89,
+  "training_error_rate_percent": 11.1,
+  "correct_predictions": 96,
+  "wrong_predictions": 4,
+  "accuracy_percent": 96.0,
+  "variable_importance": {
+    "kpr_aktif": 100.0,
+    "jumlah_tanggungan": 75.5,
+    "pendapatan_setahun_juta": 68.13,
+    "durasi_pinjaman_bulan": 57.13
+  },
+  "new_predictions": [
+    {
+      "id": "App1",
+      "income_million": 200,
+      "active_kpr": "YA",
+      "tenure_months": 12,
+      "dependents": 6,
+      "predicted_risk": 4
+    },
+    {
+      "id": "App2",
+      "income_million": 150,
+      "active_kpr": "TIDAK",
+      "tenure_months": 64,
+      "dependents": 6,
+      "predicted_risk": 2
+    },
+    {
+      "id": "App3",
+      "income_million": 300,
+      "active_kpr": "TIDAK",
+      "tenure_months": 24,
+      "dependents": 2,
+      "predicted_risk": 1
+    }
+  ]
+}
