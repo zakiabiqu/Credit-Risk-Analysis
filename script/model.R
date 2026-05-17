@@ -4,7 +4,7 @@ library(C50)
 library(reshape2)
 
 # Membaca data
-dataCreditRating <- read.xlsx(xlsxFile = "E:/Curriculum Vitae/Project/R 1/CreditRisk_R.xlsx")
+dataCreditRating <- read.xlsx(xlsxFile = "CreditRisk_R.xlsx")
 
 # Mempersiapkan class dan input variables (dengan variabel tambahan)
 dataCreditRating$risk_rating <- as.factor(dataCreditRating$risk_rating)
