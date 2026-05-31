@@ -105,8 +105,8 @@ Three sample applications were tested:
 ## How to Run the Code
 
 1. Clone this repository  
-2. Place your Excel file (CreditRisk_R.xlsx) in the data/ folder  
-3. Run script/model.R in RStudio or R console
+2. Place your Excel file (CreditRisk_R.xlsx) in the [`data/`](data/) folder  
+3. Run [`script/model.R`](script/model.R) in RStudio or R console
 
 ---
 
